@@ -11,6 +11,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\" --fix",
     "test": "jest --silent",
+    "test1":"npx jest src/01-simple-tests/index.test.ts ",
     "test:verbose": "jest",
     "build": "tsc"
   },
