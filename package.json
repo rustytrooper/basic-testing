@@ -12,6 +12,7 @@
     "lint": "eslint \"src/**/*.ts\" --fix",
     "test": "jest --silent",
     "test1":"npx jest src/01-simple-tests/index.test.ts ",
+    "test2": "npx jest src/02-table-tests/index.test.ts ",
     "test:verbose": "jest",
     "build": "tsc"
   },
