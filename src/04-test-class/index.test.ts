@@ -1,5 +1,5 @@
-// Uncomment the code below and write your tests
-// import { getBankAccount } from '.';
+import { getBankAccount } from '.';
+import { describe, test, expect } from '@jest/globals';
 
 describe('BankAccount', () => {
   test('should create account with initial balance', () => {
