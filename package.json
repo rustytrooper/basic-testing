@@ -14,6 +14,7 @@
     "test1": "npx jest src/01-simple-tests/index.test.ts ",
     "test2": "npx jest src/02-table-tests/index.test.ts ",
     "test3": "npx jest src/03-error-handling-async/index.test.ts ",
+    "test4": "npx jest src/04-test-class/index.test.ts ",
     "test:verbose": "jest",
     "build": "tsc"
   },
