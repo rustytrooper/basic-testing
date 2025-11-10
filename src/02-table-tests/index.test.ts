@@ -1,5 +1,6 @@
 // Uncomment the code below and write your tests
 import { simpleCalculator, Action } from './index';
+import { describe, test, expect } from '@jest/globals';
 
 const testCases = [
   { a: 1, b: 2, action: Action.Add, expected: 3 },
@@ -16,11 +17,14 @@ const testCases = [
   { a: 6, b: 4, action: Action.Multiply, expected: 24 },
   { a: 30, b: 5, action: Action.Subtract, expected: 25 },
   { a: 18, b: 9, action: Action.Subtract, expected: 9 },
-  { a: 40, b: 5, action: Action.Subtract, expected: 35 }
+  { a: 40, b: 5, action: Action.Subtract, expected: 35 },
 ];
 
 describe('simpleCalculator', () => {
-  test.each(testCases)('the result of $action for $a and $b is $expected', ({ a, b, action, expected }) => {
-    expect(simpleCalculator({ a, b, action })).toBe(expected)
-  })
+  test.each(testCases)(
+    'the result of $action for $a and $b is $expected',
+    ({ a, b, action, expected }) => {
+      expect(simpleCalculator({ a, b, action })).toBe(expected);
+    },
+  );
 });
